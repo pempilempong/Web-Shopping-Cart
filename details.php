@@ -6,9 +6,9 @@
         
 
         if(isset($_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']]))
-            $_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']] += $_POST['txtQuantity']; // if you already purchased this item
+            $_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']] += $_POST['txtQuantity'];
         else
-            $_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']] = $_POST['txtQuantity']; // if this is the first time you purchased the item
+            $_SESSION['cartItems'][$_POST['hdnKey']][$_POST['radSize']] = $_POST['txtQuantity']; 
 
         
         $_SESSION['totalQuantity'] += $_POST['txtQuantity'];
